@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Error</title>
+
+    <style>
+        .msj {
+            text-align: center;
+            margin: auto;
+            width: 50%;
+            padding: 200px;
+            font-size: 20px;
+        }
+        small {
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+<div class="msj">
+
+    {% if error_file %}
+    <p>Archivo "<strong>{{ error_file }}</strong>" no permitido </p>
+    <p><small>El archivo debe estar en formato <strong>txt</strong></small></p>
+    {% endif %}
+
+    {% if error_url %}
+
+    <p>La URL "<strong>{{ url }}</strong>" retorna error: {{error_url }} </p>
+
+
+    {% endif %}
+
+
+
+    {% if error_c %}
+    <p>La conversion "<strong>{{ search_key }}</strong>" esta mal formada,  error: {{error_c }} </p>
+
+
+    <p><small>Cantidad {espacio} el cod  divisa de origen {espacio/en/to} cod destino. Ej: '1 USD en MXN' </small></p>
+
+    {% endif %}
+
+
+    <br>
+    [ <a href="/">Regresar</a> ]
+</div>
+</body>
+</html>

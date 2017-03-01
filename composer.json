@@ -1,0 +1,9 @@
+{
+    "require": {
+        "slim/slim": "^3.1",
+        "monolog/monolog": "^1.17",
+        "robmorgan/phinx": "^0.5.1",
+        "slim/twig-view": "^2.2",
+        "sunra/php-simple-html-dom-parser": "1.5.2"
+    }
+}
